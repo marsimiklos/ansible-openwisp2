@@ -92,7 +92,7 @@ EXTENDED_APPS = [
     'django_loci',
 ]
 
-{% if openwisp2_firmware_upgrader %}
+{% if openwisp2_firmware_upgrader or openwisp2_radius %}
 PRIVATE_STORAGE_ROOT = os.path.join(BASE_DIR, 'private')
 {% endif %}
 
@@ -307,7 +307,6 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-PRIVATE_STORAGE_ROOT = os.path.join(MEDIA_ROOT, 'private')
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
