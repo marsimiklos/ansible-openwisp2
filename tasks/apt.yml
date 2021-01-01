@@ -2,7 +2,7 @@
 
 - name: Update APT package cache
   apt:
-    update_cache: yes
+    update_cache: true
   changed_when: false
   retries: 5
   delay: 10
